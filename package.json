@@ -1,0 +1,17 @@
+{
+  "name": "chairs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "chairs.js",
+  "scripts": {
+    "start": "nodemon server/server.js"
+  },
+  "author": "Blaine Degannes",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "lodash": "^4.6.1",
+    "morgan": "^1.7.0"
+  }
+}

@@ -1,0 +1,57 @@
+h1 {
+  text-align : center;
+}
+
+section.btn {
+  margin     : 0 0 20px 0;
+  text-align : center;
+}
+
+.room {
+  width      : 650px;
+  margin     : 0 auto;
+  padding    : 20px;
+  background : #ecf0f1;
+}
+
+.allChairs {
+  text-align : center;
+}
+
+.circle {
+  display        : inline-block;
+  width          : 50px;
+  height         : 50px;
+  margin         : 5px;
+  border-radius  : 50%;
+  background     : #24c4f8;
+  text-align     : center;
+  vertical-align : middle;
+  font-size      : 20px;
+}
+
+.circle li {
+  height      : 50px;
+  line-height : 50px;
+  white-space : nowrap;
+  list-style  : none;
+}
+
+.circle.ng-enter,
+.circle.ng-leave,
+.circle.ng-move {
+  -webkit-transition : all linear 0.8s;
+  transition         : all linear 0.8s;
+}
+
+.circle.ng-enter,
+.circle.ng-leave.ng-leave-active,
+.circle.ng-move {
+  opacity : 0;
+}
+
+.circle.ng-enter.ng-enter-active,
+.circle.ng-leave,
+.circle.ng-move.ng-move-active {
+  opacity : 0.5;
+}
