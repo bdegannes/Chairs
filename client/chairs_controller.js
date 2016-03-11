@@ -1,15 +1,22 @@
 angular.module('app.chairs', [])
 
 .controller('chairsController', ['$scope', '$interval', function($scope, $interval) {
-  $scope.chairs = [];
-  for (var i = 1; i <= 100; i++) {
-    $scope.chairs.push(i);
-  }
+
+  var loadChairs = function(){
+    $scope.chairs = [];
+    for (var i = 1; i <= 100; i++) {
+      $scope.chairs.push(i);
+    }
+  };
 
 
   $scope.moveChairs = function() {
+    loadChairs();
+
     var seq = 0,
       index = 0;
+
+    $scope.disable = true;
 
     var remove = $interval(function() {
       // when the length is 1 exit
@@ -31,9 +38,10 @@ angular.module('app.chairs', [])
 
     function finish() {
       $interval.cancel(remove);
+      $scope.disable = false;
     }
 
-  }
+  };
 
-
+  loadChairs();
 }]);

@@ -53,5 +53,5 @@ section.btn {
 .circle.ng-enter.ng-enter-active,
 .circle.ng-leave,
 .circle.ng-move.ng-move-active {
-  opacity : 0.5;
+  opacity : 1;
 }

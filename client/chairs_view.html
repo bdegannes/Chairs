@@ -1,7 +1,7 @@
 <div class="room" ng-cloak>
   <h1>Musical Chairs</h1>
   <section class="btn">
-    <md-button class="md-raised" ng-click="moveChairs(12)">Start</md-button>
+    <md-button class="md-raised" ng-disabled="disable" ng-click="moveChairs()">Start</md-button>
   </section>
   <div class="allChairs">
     <div class="circle" ng-repeat="chair in chairs" id="{{chair}}">
